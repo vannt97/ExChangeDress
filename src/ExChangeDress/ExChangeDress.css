@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content__left {
+  width: 70%;
+}
+.content__right {
+  width: 30%;
+}
+.navbar {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-item {
+}
+.nav-item button {
+  padding: 10px 50px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.nav-item button:hover,
+.nav-item button.active {
+  background-color: blue;
+  color: white;
+}
+
+.tab_content {
+  background-color: #eee;
+  height: 800px;
+}
+
+.tab_pane {
+  padding: 15px;
+  flex-wrap: wrap;
+  display: none;
+}
+.tab_pane.active {
+  display: flex;
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.item {
+  width: 25%;
+  text-align: center;
+}
+.item__content {
+  padding: 15px 50px;
+}
+.item img {
+  width: 100%;
+}
+.item p {
+  margin: 0;
+}
+.item button {
+  margin-top: 10px;
+}
+.content__right > div {
+  position: relative;
+  padding: 0 30px;
+}
+.background_demo {
+  width: 500px;
+  height: 800px;
+  background-image: url("../../public/assets/images/background/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+
+.body {
+  background: url("../../public/assets/images/allbody/bodynew.png");
+  width: 250px;
+  height: 500px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.model {
+  width: 60px;
+  height: 77px;
+  background: url("../../public/assets/images/model/1000new.png");
+  position: absolute;
+  z-index: 1;
+  top: 115px;
+  transform: translateX(-31%);
+  left: 50%;
+  background-repeat: no-repeat;
+}
+.bikinitop {
+  width: 250px;
+  height: 500px;
+  background: url("../../public/assets/images/allbody/bikini_branew.png");
+  position: absolute;
+  top: 151px;
+  left: 28%;
+  z-index: 1;
+}
+/* .bikinitop {
+  width: 450px;
+  height: 500px;
+  background: url("../../public/assets/images/clothes/topcloth3.png");
+  position: absolute;
+  top: 25px;
+  left: 48px;
+  z-index: 3;
+  transform: scale(0.5);
+} */
+/* ////bikinibottom */
+.bikinibottom {
+  width: 250px;
+  height: 500px;
+  background: url("../../public/assets/images/allbody/bikini_pantsnew.png");
+  position: absolute;
+  top: 150px;
+  left: 28%;
+  z-index: 1;
+}
+.botclothes {
+  width: 500px;
+  height: 780px;
+  position: absolute;
+  top: -41px;
+  right: 36px;
+  z-index: 1;
+  transform: scale(0.5);
+  display: none;
+}
+
+.topclothes {
+  width: 500px;
+  height: 780px;
+  position: absolute;
+  top: -43px;
+  right: 36px;
+  z-index: 2;
+  transform: scale(0.5);
+}
+.shoes {
+  width: 500px;
+  height: 1000px;
+  position: absolute;
+  top: -95px;
+  right: 36px;
+  transform: scale(0.5);
+  z-index: 2;
+  display: none;
+}
+.feet_left {
+  width: 100px;
+  height: 100px;
+  background: url("../../public/assets/images/allbody/feet_high_leftnew.png");
+  position: absolute;
+  top: 589px;
+  right: 229px;
+  transform: scale(1);
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+.feet_right {
+  width: 100px;
+  height: 100px;
+  background: url("../../public/assets/images/allbody/feet_high_rightnew.png");
+  position: absolute;
+  top: 589px;
+  right: 132px;
+  transform: scale(1);
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+.handbags {
+  width: 500px;
+  height: 1000px;
+  position: absolute;
+  top: -99px;
+  right: 36px;
+  transform: scale(0.5);
+  z-index: 3;
+  display: none;
+}
+.necklaces {
+  width: 500px;
+  height: 1000px;
+  position: absolute;
+  top: -101px;
+  right: 34px;
+  transform: scale(0.5);
+  z-index: 3;
+  display: none;
+}
+.hairstyle {
+  width: 1100px;
+  height: 1500px;
+  position: absolute;
+  top: -571px;
+  right: -268px;
+  transform: scale(0.15);
+  z-index: 4;
+  display: none;
+}
+.background {
+  width: 500px;
+  height: 800px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 46px;
+}
